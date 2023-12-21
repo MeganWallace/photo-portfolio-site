@@ -1,0 +1,48 @@
+html {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  /* font-size: 32px; */
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Rock Salt', cursive;
+  /* font-size: 24px; */
+  font-size: 1.5rem;
+  /* text-transform: uppercase; */
+  text-decoration: underline;
+}
+
+h3 {
+  /* font-family: 'Rock Salt', cursive; */
+  /* font-size: 18px; */
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  /* font-size: 18px; */
+  font-size: 1.125rem;
+  list-style: none;
+  text-transform: uppercase;
+  /* display: inline-block; */
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+#hero-quote {
+  /* font-size: 32px; */
+  font-size: 3rem;
+}
+
+/* figcaption { */
+  /* font-size: 14px; */
+  /* font-size: 0.875rem; */
+/* } */
