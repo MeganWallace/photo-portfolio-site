@@ -8,6 +8,7 @@ h1 {
   font-family: 'Rock Salt', cursive;
   /* font-size: 32px; */
   font-size: 1.78rem;
+  display: inline-block;
 }
 
 h2 {
@@ -31,6 +32,11 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+}
+
+#logo {
+  height: 80px;
+  padding: 0 20px;
 }
 
 #hero-quote {
