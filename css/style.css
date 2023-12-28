@@ -4,6 +4,7 @@ BASE STYLES
 html {
   font-family: 'Urbanist', sans-serif;
   font-size: 18px;
+  color: #ffffff;
 }
 body{
   font-size: 1em; /* 18px */
@@ -22,6 +23,7 @@ h2 {
   font-family: 'Rock Salt', cursive;
   font-size: 1.33em; /* 24px */
   text-decoration: underline;
+  color:#FFEE2E;
   /* text-transform: uppercase; */
 }
 
@@ -96,6 +98,7 @@ nav ul li a {
 #hero-quote {
   font-family: 'Rock Salt', cursive;
   font-size: 2em; /* 36px; */
+  color:#000000;
   background-color:#cf69ff;
   /* height:76px;
   margin-top: 750px;
