@@ -33,79 +33,87 @@
 <body>
 <!-- HEADER AND HERO IMAGE -->
   <header id="hero"> <!--Apply image in css to this id, may need div under as content wrapper for formatting-->
-    <img id="logo" src="img/Logo.png" alt="logo" >
-    <h1>Dorothy DeLonge</h1>
-      <nav>
-        <ul>
-          <li><a href="#work"><h3>Portfolio</h3></a></a></li>
-          <li><a href="#about"><h3>About</h3></a></li>
-          <li><a href="#contact"><h3>Contact</h3></a></li>
-        </ul>
-      </nav>
-      <p id="hero-quote">"I capture the realness behind feminism, no filter."</p>
+    <div class="content-wrapper">
+      <img id="logo-icon" src="img/logo-icon.png" alt="logo" >
+      <h1>Dorothy DeLonge</h1>
+        <nav>
+          <ul>
+            <li id="nav-portfolio" class="active"><a href="#portfolio"><h3>Portfolio</h3></a></a></li>
+            <li id="nav-about"><a href="#about"><h3>About</h3></a></li>
+            <li id="nav-contact"><a href="#contact"><h3>Contact</h3></a></li>
+          </ul>
+        </nav>
+        <p id="hero-quote">"I capture the realness behind feminism, no filter."</p>
+    </div>
   </header>
   <main>
-<!-- PORTFOLIO/WORK -->
-    <section id="work">
-      <h2>Portfolio</h2>
-      <figure>
-        <img src="" alt="Picture 1">
-        <!-- <figcaption>Work example 1</figcaption> -->
-      </figure>
-      <figure>
-        <img src="" alt="Picture 2">
-        <!-- <figcaption>Work example 2</figcaption> -->
-      </figure>
-      <figure>
-        <img src="" alt="Picture 3">
-        <!-- <figcaption>Work example 3</figcaption> -->
-      </figure>
-      <figure>
-        <img src="" alt="Picture 4">
-        <!-- <figcaption>Work example 4</figcaption> -->
-      </figure>
+<!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="content-wrapper">
+        <h2>Portfolio</h2>
+        <figure>
+          <img src="" alt="Picture 1">
+          <!-- <figcaption>portfolio example 1</figcaption> -->
+        </figure>
+        <figure>
+          <img src="" alt="Picture 2">
+          <!-- <figcaption>portfolio example 2</figcaption> -->
+        </figure>
+        <figure>
+          <img src="" alt="Picture 3">
+          <!-- <figcaption>portfolio example 3</figcaption> -->
+        </figure>
+        <figure>
+          <img src="" alt="Picture 4">
+          <!-- <figcaption>portfolio example 4</figcaption> -->
+        </figure>
+      </div>
     </section>
 <!-- ABOUT SECTION -->
     <section id="about">
-      <h2>About</h2>
-      <img src="" alt="Picture of Dorothy">
-      <p>My work focuses on candid photographs taken on location at events for women’s rights, places where women are
-        owning their space, and fleeting encounters on the streets. My work engulfs the viewer in real moments of
-        strength, vulnerability, and solidarity.</p>
+      <div class="content-wrapper">
+        <h2>About</h2>
+        <img src="" alt="Picture of Dorothy">
+        <p>My portfolio focuses on candid photographs taken on location at events for women’s rights, places where women are
+          owning their space, and fleeting encounters on the streets. My portfolio engulfs the viewer in real moments of
+          strength, vulnerability, and solidarity.</p>
+      </div>
     </section>
   </main>
-  <!-- FOOTER AND CONTACT INFO -->
+<!-- FOOTER AND CONTACT INFO -->
   <footer id="contact">
-    <h2>Let's Get In Touch</h2>
-    <div>
-      <p>888-765-4321<br>
-      <a href = "mailto: hi@dorothydelongphoto.com">hi@dorothydelongphoto.com</a></p>
-    </div>
-    <div>
-      <!-- <h3>Follow me on social media</h3> -->
-      <ul>
-        <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
-          <i aria-hidden="true" class="fa-brands fa-facebook-f"></i>
-          <span class="fa-sr-only">Dorothy's Facebook account</span>
-        </a></li>
-        <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
-          <i aria-hidden="true" class="fa-brands fa-instagram"></i>
-          <span class="fa-sr-only">Dorothy's Instagram account</span>
-        </a></li>
-        <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
-            <i aria-hidden="true" class="fa-brands fa-x-twitter"></i>
-            <span class="fa-sr-only">Dorothy's Twitter account</span>
+    <div class="content-wrapper">
+      <h2>Let's Get In Touch</h2>
+      <div>
+        <p>888-765-4321<br>
+        <a href = "mailto: hi@dorothydelongphoto.com">hi@dorothydelongphoto.com</a></p>
+      </div>
+      <div>
+        <!-- <h3>Follow me on social media</h3> -->
+        <ul>
+          <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
+            <i aria-hidden="true" class="fa-brands fa-facebook-f"></i>
+            <span class="fa-sr-only">Dorothy's Facebook account</span>
           </a></li>
-        <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
-          <i aria-hidden="true" class="fa-brands fa-flickr"></i>
-          <span class="fa-sr-only">Dorothy's Flickr account</span>
-        </a></li>
-        <!-- <li><a href="">  -->
-          <!-- Semantic Web Fonts-based Icon -->
-          <!-- <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i> -->
-          <!-- <span class="fa-sr-only">Dorothy's LinkedIn account</span> -->
-        <!-- </a></li> -->
-    </ul>
+          <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
+            <i aria-hidden="true" class="fa-brands fa-instagram"></i>
+            <span class="fa-sr-only">Dorothy's Instagram account</span>
+          </a></li>
+          <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
+              <i aria-hidden="true" class="fa-brands fa-x-twitter"></i>
+              <span class="fa-sr-only">Dorothy's Twitter account</span>
+            </a></li>
+          <li><a href=""> <!-- Semantic Web Fonts-based Icon -->
+            <i aria-hidden="true" class="fa-brands fa-flickr"></i>
+            <span class="fa-sr-only">Dorothy's Flickr account</span>
+          </a></li>
+          <!-- <li><a href="">  -->
+            <!-- Semantic Web Fonts-based Icon -->
+            <!-- <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i> -->
+            <!-- <span class="fa-sr-only">Dorothy's LinkedIn account</span> -->
+          <!-- </a></li> -->
+      </ul>
+      </div>
     </div>
   </footer>
   <!-- JavaScript -->

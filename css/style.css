@@ -4,55 +4,121 @@ BASE STYLES
 html {
   font-family: 'Urbanist', sans-serif;
   font-size: 18px;
-  margin: 20px;
+}
+body{
+  font-size: 1em; /* 18px */
+  background-color: #1F001F;
+  background-image: linear-gradient(#67198A, #1F001F);
+  margin: 0;
 }
 
 h1 {
   font-family: 'Rock Salt', cursive;
-  /* font-size: 32px; */
-  font-size: 1.78rem;
+  font-size: 1.78em; /* 32px */
   display: inline-block;
 }
 
 h2 {
   font-family: 'Rock Salt', cursive;
-  /* font-size: 24px; */
-  font-size: 1.33rem;
-  /* text-transform: uppercase; */
+  font-size: 1.33em; /* 24px */
   text-decoration: underline;
+  /* text-transform: uppercase; */
 }
 
 h3 {
   font-family: 'Rock Salt', cursive;
   text-transform: uppercase;
+  font-size: 1em; /* 18px */
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  overflow: auto;
 }
 
 /* ===========================================================================================
 HEADER STYLES
 =========================================================================================== */
+#hero{
+  background: url('../img/hero-image.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1024px;
+}
+#logo-icon {
+  height: 80px; 
+  padding: 0 20px; 
+}
+#hero h1 {
+  color: #FFEE2E;
+  /* margin: 30px 0; */
+  padding: 10px 0; 
+}
+header nav {
+  float: right;
+  margin: 25px; 
+}
 nav ul li {
   list-style: none;
   text-transform: uppercase;
-  /* display: inline-block; */
+  display: inline-block;
+  background-color: #cf69ff;
+  padding: 0 25px;
+  height: 36px;
 }
-
+#hero h3 {
+  margin: 5px;
+}
+#nav-portfolio {
+  transform: rotate(-4.61deg);
+}
+#nav-about {
+  transform: rotate(9.97deg);
+}
+#nav-contact {
+  transform: rotate(-5.47deg);
+}
 nav ul li a {
   text-decoration: none;
-}
+  color: #000000;
+} 
 
-#logo {
-  height: 80px;
-  padding: 0 20px;
+/* --- active nav link styling --- */
+.active { 
+  background-color: #67198A;
 }
+.active a { 
+  color:#FFEE2E;
+}
+/* ------------------------------- */
 
 #hero-quote {
   font-family: 'Rock Salt', cursive;
-  /* font-size: 36px; */
-  font-size: 2rem;
+  font-size: 2em; /* 36px; */
+  background-color:#cf69ff;
+  /* height:76px;
+  margin-top: 750px;
+  display: inline-block; */
 }
 
+/* ===========================================================================================
+PORTFOLIO/WORK STYLES
+=========================================================================================== */
+
+/* ===========================================================================================
+ABOUT STYLES
+=========================================================================================== */
+
+/* ===========================================================================================
+FOOTER/CONTACT STYLES
+=========================================================================================== */
 footer ul li {
   font-size: 60px;
   list-style: none;
   display: inline-block;
+  padding: 60px;
+}
+footer i {
+  color: #FFEE2E;
 }
