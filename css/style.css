@@ -24,6 +24,7 @@ h2 {
   font-size: 1.33em; /* 24px */
   text-decoration: underline;
   color:#FFEE2E;
+  text-align: center;
   /* text-transform: uppercase; */
 }
 
@@ -108,19 +109,49 @@ nav ul li a {
 /* ===========================================================================================
 PORTFOLIO/WORK STYLES
 =========================================================================================== */
-
+#portfolio {
+  padding: 40px;
+}
+.image-row {
+  display:flex;
+}
+#portfolio img {
+  max-width: 100%;
+  margin: 10px;
+}
 /* ===========================================================================================
 ABOUT STYLES
 =========================================================================================== */
-
+#about {
+  display: flex;
+  padding: 50px;
+}
+#artist-statement {
+  padding-left: 50px;
+  padding-top: 80px
+}
 /* ===========================================================================================
 FOOTER/CONTACT STYLES
 =========================================================================================== */
+#contact {
+  padding: 50px
+}
+#contact .content-wrapper {
+  display: flex;
+  width: 90%;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color:#ffffff;
+}
 footer ul li {
   font-size: 60px;
   list-style: none;
   display: inline-block;
-  padding: 60px;
+  padding: 0 60px;
 }
 footer i {
   color: #FFEE2E;
