@@ -10,13 +10,16 @@ body{
   font-size: 1em; /* 18px */
   background-color: #1F001F;
   background-image: linear-gradient(#67198A, #1F001F);
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 
 h1 {
   font-family: 'Rock Salt', cursive;
-  font-size: 1.78em; /* 32px */
-  display: inline-block;
+  font-size: 2em; /* 36px */
+  color:#000000;
 }
 
 h2 {
@@ -25,7 +28,6 @@ h2 {
   text-decoration: underline;
   color:#FFEE2E;
   text-align: center;
-  /* text-transform: uppercase; */
 }
 
 h3 {
@@ -35,12 +37,12 @@ h3 {
 }
 
 .content-wrapper {
-  margin: 0 auto;
-  overflow: auto;
-  width: 95%;
+  /* overflow: auto; */
+  /* width: 95%; */
+  margin: 2%;
 }
 
-.picture img {
+img {
   width: 100%;
 }
 
@@ -51,34 +53,41 @@ figure {
 /* ===========================================================================================
 HEADER STYLES
 =========================================================================================== */
+/* -------- Hero Image -------- */
 #hero{
   background: url('../img/hero-image.png') no-repeat;
   background-size: cover;
   background-position: center;
+  height: 70vh;
+  display: flex;
 }
-#logo-icon {
-  height: 80px; 
-  padding: 0 20px; 
+#hero .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
 }
-#hero h1 {
-  color: #FFEE2E;
-  /* margin: 30px 0; */
-  padding: 10px 0; 
+
+/* ----------- Logo ----------- */
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-header nav {
-  /* float: right; */
-  margin: 25px; 
+#logo {
+  width: 30%;
+}
+
+/* ----- Navigation Menu ----- */
+nav ul {
+  display: flex;
+  /* margin: 25px; */
+  width: 40%;
 }
 nav ul li {
   list-style: none;
   text-transform: uppercase;
-  display: inline-block;
   background-color: #cf69ff;
   padding: 0 25px;
   height: 36px;
-}
-#hero h3 {
-  margin: 5px;
 }
 #nav-portfolio {
   transform: rotate(-4.61deg);
@@ -93,6 +102,9 @@ nav ul li a {
   text-decoration: none;
   color: #000000;
 } 
+nav h3 {
+  margin: 5px;
+}
 
 /* --- active nav link styling --- */
 .active { 
@@ -101,28 +113,38 @@ nav ul li a {
 .active a { 
   color:#FFEE2E;
 }
-/* ------------------------------- */
 
+/* ----------Hero Quote ------------ */
 #hero-quote {
   font-family: 'Rock Salt', cursive;
-  font-size: 2em; /* 36px; */
   color:#000000;
-  background-color:#cf69ff;
-  /* height:76px;
-  margin-top: 750px;
-  display: inline-block; */
+  background-color:#cf69ff99;
+  outline: 5px solid #ffee1a99;
+  align-self: flex-end;
+  padding: 0 25px;
+  margin: 3%;
 }
 
 /* ===========================================================================================
 PORTFOLIO/WORK STYLES
 =========================================================================================== */
 #portfolio {
-  padding: 40px 0 ;
+  padding: 30px 0 40px 0 ;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
 }
 .image-row {
   display:flex;
-}
+  justify-content: center;
 
+}
+.sm-pic {
+  flex-grow: 2;
+}
+.lg-pic {
+  flex-grow: 3;
+}
 /* ===========================================================================================
 ABOUT STYLES
 =========================================================================================== */
@@ -152,10 +174,8 @@ FOOTER/CONTACT STYLES
   padding-top: 60px;
 }
 footer p {
-  line-height: 40px;
   font-size: 1.33em;
   text-align: center;
-  margin: 0 auto;
 }
 footer a {
   text-decoration: none;
